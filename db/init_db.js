@@ -1,13 +1,21 @@
 // code to build and initialize DB goes here
-const {
-  client,
-  createLink,
-  getAllLinks,
-  getLinkById,
-  getAllTags,
-  getLinksByTagName,
-  // other db methods
-} = require("./index");
+// const {
+//   client,
+//   createLink,
+//   getAllLinks,
+//   getLinkById,
+//   getAllTags,
+//   getLinksByTagName,
+//   // other db methods
+// } = require("./index");
+
+const { client } = require("./client");
+const { getAllTags,  } = require("./tags")
+const { createLink, 
+        getAllLinks, 
+        getLinkById, 
+        getLinksByTagName } = require("./links");
+
 
 async function dropTables() {
   // drop tables in correct order
