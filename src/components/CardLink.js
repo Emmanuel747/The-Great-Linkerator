@@ -43,7 +43,7 @@ const CardLink = ({ links, setLinks, reset }) => {
                   e.preventDefault();
                   updateCardClicks(link.id);
                   handleReset();
-                  // window.open(link.link);
+                  window.open(link.link);
                 }}
               >
                 {link.link}
